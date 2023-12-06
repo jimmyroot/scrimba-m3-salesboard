@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Salesboard</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="main">
+            <header class="container">
+                <h1>Salesboard 🔔</h1>
+                <img src="images/jimmy.png" class="avatar">
+            </header>
+            <section class="products">
+                <button class="button" id="btn-product-a">⭐️</button>
+                <button class="button" id="btn-product-b">🔥</button>
+                <button class="button" id="btn-reset">🔄</button>
+                <button class="button" id="btn-toggle-theme"></button>
+            </section>
+            <section class="statistics">
+                <h2>Live Sales - <span id="span-live-sales"></span></h2>
+                <p class="p-statistic stats" id="p-live-sales"></p>
+                <h2>Live Achievements - <span id="span-live-achievements"></span></h2>
+                <p class="p-statistic stats" id="p-achievements"></p>
+                <div class="totals">
+                    <div>
+                        <h2>Total Revenue</h2>
+                        <p class="p-total stats" id="p-revenue">$0</p>
+                    </div>
+                    <div>
+                        <h2>Total Commission</h2>
+                        <p class="p-total stats" id="p-commission">$0</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>

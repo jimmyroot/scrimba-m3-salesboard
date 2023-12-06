@@ -1,0 +1,135 @@
+*, *::before, *::after { box-sizing: inherit }
+
+/* :root {
+    --one: #201A23;
+    --two: #44354A;
+    --txt: #00;
+    --accent: #9E4770;
+} */
+
+.dark {
+    --one: #001B0E;
+    --two: #00392F;
+    --txt: #00FF85;
+    --border: #00592E;
+    --accent: #DFFFEC;
+}
+
+.light {
+    --one: #FBFBFB;
+    --two: #C9FFE5;
+    --txt: #373737;
+    --border: #b7e6d3;
+    --accent: #29ce81;
+}
+
+html {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0 0 23px 0;
+}
+
+
+h2 {
+    margin: 34px 0 0 0;
+    padding: 0;
+}
+
+p {
+    margin: 12px 0 0 0; 
+    padding: 0;
+}
+
+/* Trickses to stop the p elements from
+collapsing when empty */
+p::after {
+    content: '\200B';
+}
+
+html, body {
+    background: var(--one);
+    color: var(--txt);
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 750px;
+    margin: 40px auto;
+}
+
+.button {
+    background-color: var(--accent);
+    font-size: 45px;
+    width: 148px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+.avatar {
+    width: 218px;
+    border: 10px solid var(--two);
+    border-radius: 100%;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin: 30px 0 0 0;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-statistic,
+.p-total {
+    background-color: var(--two);
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    padding: 12px 23px;
+    box-shadow: inset 0 10px 35px 10px rgba(23, 118, 74, 0.2);
+}
+
+.p-statistic {
+    font-size: 32px;
+    text-align: left;;
+}
+
+.p-total {
+    font-size: 40px;
+}
+
+.p-statistic {
+    width: 100%;
+}
+
+.totals {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 16px;
+}
+
+.totals div {
+    width: 100%;
+}
